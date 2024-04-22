@@ -27,9 +27,21 @@ function App() {
 
     return (
         <div className="App">
-            <ContactList contacts={contacts} deleteContact={deleteContact}/>
-            <button className="btn" onClick={toggleForm}>Додати контакт</button>
-            {isOpen && <ContactForm addContact={addContact} toggleForm={toggleForm} isOpen={isOpen}/>}
+            <ContactList
+                contacts={contacts}
+                deleteContact={deleteContact}
+            />
+
+            <button
+                className="btn"
+                onClick={toggleForm}
+            >Додати контакт</button>
+
+            {isOpen && <ContactForm
+                addContact={addContact}
+                toggleForm={toggleForm}
+                isOpen={isOpen}
+            />}
         </div>
     );
 }

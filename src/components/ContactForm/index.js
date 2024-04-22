@@ -17,27 +17,42 @@ function ContactForm({ toggleForm, addContact, isOpen }) {
     };
 
     return (
-        <form className={styles.contactForm} onSubmit={handleSubmit} style={{ display: isOpen ? 'block' : 'none' }}>
+        <form
+            className={styles.contactForm}
+            onSubmit={handleSubmit}
+            style={{ display: isOpen ? 'block' : 'none' }}>
+
             <input
                 type="text"
                 placeholder="Ім'я"
                 value={name}
                 onChange={e => setName(e.target.value)}
             />
+
             <input
                 type="text"
                 placeholder="Нік"
                 value={username}
                 onChange={e => setUsername(e.target.value)}
             />
+
             <input
                 type="text"
                 placeholder="Телефон"
                 value={phone}
                 onChange={e => setPhone(e.target.value)}
             />
-            <button className={styles.submit} type="submit">Зберегти</button>
-            <button className={styles.cancel} type="button" onClick={toggleForm}>Скасувати</button>
+
+            <button
+                className={styles.submit}
+                type="submit"
+            >Зберегти</button>
+
+            <button
+                className={styles.cancel}
+                type="button"
+                onClick={toggleForm}
+            >Скасувати</button>
         </form>
     );
 }

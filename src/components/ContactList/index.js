@@ -13,6 +13,7 @@ function ContactList({ contacts, deleteContact }) {
             </tr>
             </thead>
             <tbody>
+
             {contacts.map(contact => (
                 <ContactItem
                     key={contact.id}
@@ -20,6 +21,7 @@ function ContactList({ contacts, deleteContact }) {
                     deleteContact={deleteContact}
                 />
             ))}
+
             </tbody>
         </table>
     );
