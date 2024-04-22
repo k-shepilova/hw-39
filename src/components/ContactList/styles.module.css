@@ -1,0 +1,27 @@
+.table, th, td {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+.table {
+  margin-bottom: 30px;
+}
+
+th {
+  background: lavender;
+}
+
+tr {
+  background: lavenderblush;
+
+  &:nth-child(odd) {
+    background: honeydew;
+  }
+}
+
+td {
+}
+
+th, td {
+  padding: 10px;
+}

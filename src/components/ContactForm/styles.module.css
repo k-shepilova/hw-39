@@ -1,0 +1,34 @@
+.contactForm {
+  margin: 0 -10px;
+
+  input {
+    display: block;
+    max-width: 100%;
+    padding: 10px 20px;
+    margin: 0 10px 20px;
+  }
+
+  button {
+    margin: 0 10px;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    &.submit {
+      background: lightblue;
+
+      &:hover {
+        background: cadetblue;
+      }
+    }
+
+    &.cancel {
+      background: mistyrose;
+
+      &:hover {
+        background: rosybrown;
+      }
+    }
+  }
+}
